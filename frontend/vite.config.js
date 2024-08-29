@@ -8,4 +8,7 @@ export default defineConfig({
     host: "192.168.86.222", // Allows access from any IP address on the local network
     port: 5173, // Change the port if needed
   },
+  build: {
+    outDir: "dist",
+  },
 });
