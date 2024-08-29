@@ -2,15 +2,14 @@ const express = require("express");
 const mysql = require("mysql2");
 const bodyParser = require("body-parser");
 const cors = require("cors");
-
 const app = express();
 const port = 5000;
 
 // MySQL connection
 const connection = mysql.createConnection({
-  host: "localhost",
-  user: "root", // Update with your MySQL username
-  password: "", // Update with your MySQL password
+  host: "192.168.86.222", // Set to 0.0.0.0 or your server's IP
+  user: "root",
+  password: "",
   database: "job_order_db",
 });
 
@@ -40,6 +39,17 @@ app.post("/api/submit", (req, res) => {
       }
     }
   );
+});
+
+// Route to fetch current job orders
+app.get("/api/currentjo", (req, res) => {
+  connection.query("SELECT * FROM job_orders", (err, results) => {
+    if (err) {
+      res.status(500).json({ error: err.message });
+    } else {
+      res.json(results);
+    }
+  });
 });
 
 app.listen(port, () => {

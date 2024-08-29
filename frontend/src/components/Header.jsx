@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <header className="bg-blue-600 text-white p-5 shadow-lg">
+    <header className="bg-blue-950 text-white p-5 shadow-lg">
       <div className="container mx-auto flex items-center justify-between">
         <h1 className="text-4xl font-extrabold">Job Order Management</h1>
         <nav>

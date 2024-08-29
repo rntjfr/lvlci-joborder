@@ -105,7 +105,7 @@ const FileJO = () => {
         <div className="flex justify-center">
           <button
             type="submit"
-            className="bg-blue-500 text-white p-2 rounded hover:bg-blue-600 transition duration-300"
+            className="bg-blue-950 text-white p-2 rounded hover:bg-blue-600 transition duration-300"
           >
             Submit
           </button>
