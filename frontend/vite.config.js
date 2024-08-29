@@ -9,6 +9,6 @@ export default defineConfig({
     port: 5173, // Change the port if needed
   },
   build: {
-    outDir: "frontend/dist",
+    outDir: "dist",
   },
 });
