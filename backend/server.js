@@ -18,7 +18,7 @@ const connection = mysql.createConnection({
 
 connection.connect((err) => {
   if (err) throw err;
-  console.log("Connected to MySQL database.");
+  console.log("Connected to Aiven MySQL database.");
 });
 
 app.use(cors());
