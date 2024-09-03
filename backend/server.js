@@ -1,3 +1,5 @@
+require("dotenv").config(); // Load environment variables from .env file
+
 const express = require("express");
 const mysql = require("mysql2");
 const bodyParser = require("body-parser");
@@ -7,10 +9,11 @@ const port = 5000;
 
 // MySQL connection
 const connection = mysql.createConnection({
-  host: "192.168.86.222", // Replace with your database server's IP or hostname
-  user: "root",
-  password: "", // Add your database password here
-  database: "job_order_db",
+  host: process.env.DB_HOST,
+  port: process.env.DB_PORT,
+  user: process.env.DB_USER,
+  password: process.env.DB_PASS,
+  database: process.env.DB_NAME,
 });
 
 connection.connect((err) => {
@@ -138,5 +141,5 @@ app.get("/api/completedjo", (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`Server is running on http://localhost:${port}`);
+  console.log(`Connected to the Aiven MySQL database!`);
 });

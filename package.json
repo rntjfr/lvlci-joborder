@@ -11,12 +11,13 @@
     "start": "react-scripts start"
   },
   "dependencies": {
-    "vite": "^latest_version",
     "axios": "^1.7.5",
+    "dotenv": "^16.4.5",
+    "frontend": "file:frontend",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.26.1",
-    "frontend": "file:frontend"
+    "vite": "^latest_version"
   },
   "devDependencies": {
     "@eslint/js": "^9.9.0",
