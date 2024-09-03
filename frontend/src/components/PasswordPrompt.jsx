@@ -10,7 +10,7 @@ const PasswordPrompt = ({ onClose }) => {
     event.preventDefault();
 
     // Replace with your actual password check
-    if (password === "yourpassword") {
+    if (password === "lvledesma") {
       navigate("/currentjo");
       onClose(); // Close the prompt
     } else {
