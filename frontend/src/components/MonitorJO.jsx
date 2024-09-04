@@ -19,7 +19,7 @@ const MonitorJO = () => {
     const fetchJobs = async () => {
       try {
         const response = await axios.get(
-          "http://192.168.86.222:5000/api/completedjo"
+          "http://124.105.176.176:5000/api/completedjo"
         );
         setJobs(response.data);
       } catch (err) {
