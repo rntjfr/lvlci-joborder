@@ -1,5 +1,5 @@
 import React from "react";
-import CurrentJO from "../components/CurrentJO";
+import CurrentJO from "../component/CurrentJO";
 
 const CurrentJOPage = () => {
   return (

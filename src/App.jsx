@@ -1,9 +1,9 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Header from "./components/Header";
-import FileJOPage from "./pages/FileJOPage";
-import CurrentJOPage from "./pages/CurrentJOPage";
-import MonitorJOPage from "./pages/MonitorJOPage";
+import Header from "./frontend/component/Header";
+import FileJOPage from "./frontend/pages/FileJOPage";
+import CurrentJOPage from "./frontend/pages/CurrentJOPage";
+import MonitorJOPage from "./frontend/pages/MonitorJOPage";
 
 const App = () => {
   return (

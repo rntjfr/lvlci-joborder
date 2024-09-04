@@ -1,9 +1,10 @@
-require("dotenv").config(); // Load environment variables from .env file
+import "dotenv/config"; // Load environment variables from .env file
 
-const express = require("express");
-const mysql = require("mysql2");
-const bodyParser = require("body-parser");
-const cors = require("cors");
+import express from "express";
+import mysql from "mysql2";
+import bodyParser from "body-parser";
+import cors from "cors";
+
 const app = express();
 const port = 5000;
 
@@ -141,5 +142,9 @@ app.get("/api/completedjo", (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`Connected to the Aiven MySQL database!`);
+  console.log(`Database Connection Details:
+    Host: ${process.env.DB_HOST}
+    Port: ${process.env.DB_PORT}
+    User: ${process.env.DB_USER}
+    Database: ${process.env.DB_NAME}`);
 });

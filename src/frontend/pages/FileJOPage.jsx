@@ -1,5 +1,5 @@
 import React from "react";
-import FileJO from "../components/FileJO";
+import FileJO from "../component/FileJO";
 
 const FileJOPage = () => {
   return (

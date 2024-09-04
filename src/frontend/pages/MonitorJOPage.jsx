@@ -1,5 +1,5 @@
 import React from "react";
-import MonitorJO from "../components/MonitorJO";
+import MonitorJO from "../component/MonitorJO";
 
 const MonitorJOPage = () => {
   return (
