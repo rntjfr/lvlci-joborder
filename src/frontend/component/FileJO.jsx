@@ -11,7 +11,7 @@ const FileJO = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://192.168.86.222:5000/api/submit", {
+      await axios.post("http://localhost:5000/api/submit", {
         requestorName,
         department,
         location,
