@@ -7,13 +7,13 @@ import cors from "cors";
 
 const app = express();
 const port = 5000;
-const cors = require("cors");
+// const cors = require("cors");
 
-app.use(
-  cors({
-    origin: "https://lvlci-joborder.vercel.app", // Adjust this to your React app's domain
-  })
-);
+// // app.use(
+// //   cors({
+// //     origin: "https://lvlci-joborder.vercel.app", // Adjust this to your React app's domain
+// //   })
+// // );
 
 // MySQL connection
 const connection = mysql.createConnection({

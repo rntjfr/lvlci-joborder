@@ -24,7 +24,7 @@ const CurrentJO = () => {
     const fetchCurrentJobs = async () => {
       try {
         const response = await axios.get(
-          "http://192.168.86.222:5000/api/currentjo"
+          "https://192.168.86.222:5000/api/currentjo"
         );
         setCurrentJobs(response.data);
       } catch (err) {
