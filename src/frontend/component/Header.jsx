@@ -27,7 +27,7 @@ const Header = () => {
             <li>
               <a
                 href="/currentjo"
-                // onClick={handleCurrentJoClick} // Use the click handler instead of a direct link
+                onClick={handleCurrentJoClick} // Use the click handler instead of a direct link
                 className="text-lg font-medium transition duration-300 hover:bg-blue-700 hover:text-white px-3 py-2 rounded-md cursor-pointer"
               >
                 Current Job Orders
