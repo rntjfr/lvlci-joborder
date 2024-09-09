@@ -24,7 +24,7 @@ connection.connect((err) => {
 
 app.use(
   cors({
-    origin: ["https://lvlci-joborder.vercel.app", "http://localhost:5000"],
+    //origin: ["https://lvlci-joborder.vercel.app", "http://localhost:5000"],
   })
 );
 app.use(bodyParser.json());
