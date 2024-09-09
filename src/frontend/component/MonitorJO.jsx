@@ -19,7 +19,7 @@ const MonitorJO = () => {
     const fetchJobs = async () => {
       try {
         const response = await axios.get(
-          "https://lvlci-joborder.vercel.app/api/completedjo"
+          "http://localhost:5000/api/completedjo"
         );
         setJobs(response.data);
       } catch (err) {
