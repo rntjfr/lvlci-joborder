@@ -24,7 +24,7 @@ connection.connect((err) => {
 
 app.use(
   cors({
-    //origin: "https://lvlci-joborder.vercel.app", // Replace with your Vercel app URL
+    origin: "https://lvlci-joborder.vercel.app", // Replace with your Vercel app URL
   })
 );
 app.use(bodyParser.json());
