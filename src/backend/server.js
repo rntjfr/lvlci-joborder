@@ -7,13 +7,6 @@ import cors from "cors";
 
 const app = express();
 const port = 5000;
-// const cors = require("cors");
-
-// // app.use(
-// //   cors({
-// //     origin: "https://lvlci-joborder.vercel.app", // Adjust this to your React app's domain
-// //   })
-// // );
 
 // MySQL connection
 const connection = mysql.createConnection({
@@ -29,7 +22,11 @@ connection.connect((err) => {
   console.log("Connected to Aiven MySQL database.");
 });
 
-app.use(cors());
+app.use(
+  cors({
+    //origin: "https://lvlci-joborder.vercel.app", // Replace with your Vercel app URL
+  })
+);
 app.use(bodyParser.json());
 
 // Endpoint to submit a new job order

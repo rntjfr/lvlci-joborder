@@ -23,9 +23,7 @@ const CurrentJO = () => {
   useEffect(() => {
     const fetchCurrentJobs = async () => {
       try {
-        const response = await axios.get(
-          "https://localhost:5000/api/currentjo"
-        );
+        const response = await axios.get("http://localhost:5000/api/currentjo");
         setCurrentJobs(response.data);
       } catch (err) {
         setError("Failed to fetch job orders.");
@@ -55,7 +53,7 @@ const CurrentJO = () => {
     try {
       // Send data to the backend for processing the job order
       await axios.post(
-        `http://192.168.86.222:5000/api/completejo/${selectedJob.id}`,
+        `http://localhost:5000/api/completejo/${selectedJob.id}`,
         {
           processedBy,
           actionTaken,
